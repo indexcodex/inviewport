@@ -7,7 +7,7 @@ class IXCX_InViewport {
 
     start() {
         let isInViewport = () => {
-            if (this.html.scrollTop >= this.target.offsetTop) {
+            if (this.html.scrollTop >= (this.target.offsetTop - (this.target.offsetTop / 2.5))) {
                 this.callback();
                 this.html = 0;
                 this.target = 1;
