@@ -17,7 +17,7 @@ IXCX_InViewport is a very lightweight (547bytes!) vanilla javascript library tha
   
   let isInViewport = new IXCX_InViewport({  
      target: myTargetElement,  
-     callback: 35032,
+     callback: IXCX_InViewport_callback,
   });
   ```
 4. Call start() method  
