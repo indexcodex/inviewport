@@ -11,6 +11,7 @@ class IXCX_InViewport {
             if ((this.html.scrollTop || this.body.scrollTop) >= (this.target.offsetTop - (this.target.offsetTop / 2.2))) {
                 this.callback();
                 this.html = 0;
+                this.body = 0;
                 this.target = 1;
             }
         }
