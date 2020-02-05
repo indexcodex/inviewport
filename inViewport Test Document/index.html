@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='IXCX_InViewport.js'></script>
+    <title>inViewport Test Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid green;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>SECTION 1</h1>
+    </div>
+    <div>
+        <h1>SECTION 2</h1>
+    </div>
+    <div>
+        <h1>SECTION 3</h1>
+    </div>
+    <div>
+        <h1>SECTION 4</h1>
+    </div>
+    <div>
+        <h1>SECTION 5</h1>
+    </div>
+
+    <script>
+        let h1 = document.querySelectorAll('h1');
+
+        function inViewportCallback() {
+            h1[3].style.color = 'red';
+        }
+
+        let inViewport = new IXCX_InViewport({
+            target: h1[3],
+            callback: inViewportCallback,
+            offsetTrigger: null,
+            debugMode: 1,
+        });
+
+        inViewport.start();
+    </script>
+</body>
+
+</html>
