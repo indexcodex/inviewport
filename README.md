@@ -2,7 +2,7 @@
 IXCX_InViewport is a very lightweight (547bytes!) vanilla javascript library that runs a user defined funtions when the target element is in viewport!
 
 # How to use
-1. Add the script to your document  
+1. Add the script inside the head tag  
 `<script src="assets/IXCX_InViewport.js"></script>`  
 2. Create an IXCX_InViewport object  
 `let isInViewport = new IXCX_InViewport({target: null, callback: null})`  
