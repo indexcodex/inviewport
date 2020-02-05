@@ -5,7 +5,7 @@ IXCX_InViewport is a very lightweight (547bytes!) vanilla javascript library tha
 1. Add the script inside the head tag  
 `<script src="assets/IXCX_InViewport.js"></script>`  
 2. Create an IXCX_InViewport object  
-`let isInViewport = new IXCX_InViewport({target: null, callback: null, offsetTrigger: null,})`  
+`let isInViewport = new IXCX_InViewport({target: null, callback: null, offsetTrigger: null,});`  
 3. Fill in the following data:  
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) target (required) :**  `Your target element via getElementById, querySelector, etc..`  
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) callback (required; data type function) :**  `The function to run when target is in viewport`  
