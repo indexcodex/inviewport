@@ -1,5 +1,5 @@
 class IXCX_InViewport {
-    constructor(objectData = { target: null, callback: null, offsetTrigger: null,}) {
+    constructor(objectData = {target: null, callback: null, offsetTrigger: null,}) {
         this.html = document.documentElement;
         this.body = document.body;
 
