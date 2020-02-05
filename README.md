@@ -8,8 +8,8 @@ IXCX_InViewport is a very lightweight (547bytes!) vanilla javascript library tha
 `let isInViewport = new IXCX_InViewport({target: null, callback: null})`  
 3. Fill in the following data:  
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) target (required) :**  `Your target element via getElementById, querySelector, etc..`  
-   **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) callback (required) :**  `The function to run when target is in viewport`  
-   **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) offsetTrigger (optional, default: half of screen) :**  `trigger the callback by X pixels above the target`  
+   **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) callback (required; data type function) :**  `The function to run when target is in viewport`  
+   **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) offsetTrigger (optional; default: half of screen; data type: int) :**  `trigger the callback by X pixels above the target`  
    
   ```
   function IXCX_InViewport_callback() {
