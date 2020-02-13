@@ -3,7 +3,7 @@ IXCX_InViewport is a very lightweight (2.3kb!) vanilla javascript library that r
 
 # How to use
 1. Add the script inside the head tag  
-`<script src="assets/IXCX_InViewport.js"></script>`  
+`<script src="IXCX_InViewport.js"></script>`  
 2. Create an IXCX_InViewport object  
 3. Fill in the following data:  
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) target (required) :**  `Your target element via getElementById, querySelector, etc..`  
