@@ -12,3 +12,20 @@ IXCX_InViewport is a very lightweight (1.81kb!) vanilla javascript library that 
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) debugMode (optional; default: false; data type: boolean) :**  `shows a visual debugger to help determine the callback trigger point`  
 4. Call start() method  
 
+# Code Sample
+```
+let h1 = document.querySelector('h1');
+
+function inViewportCallback() {
+  h1.style.color = 'red';
+}
+
+let inViewport = new IXCX_InViewport({
+  target: h1,
+  callback: inViewportCallback,
+  offsetTrigger: '50%',
+  debugMode: 1,
+});
+
+inViewport.start();
+```
