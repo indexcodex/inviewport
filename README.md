@@ -1,5 +1,5 @@
 # IXCX_InViewport (v2.0.0)
-IXCX_InViewport is a very lightweight (1.81kb!) vanilla javascript library that runs a user defined funtion when the target element is in viewport!
+IXCX_InViewport is a very lightweight (2.3kb!) vanilla javascript library that runs a user defined funtion when the target element is in viewport!
 
 # How to use
 1. Add the script inside the head tag  
