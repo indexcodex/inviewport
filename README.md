@@ -13,6 +13,7 @@ IXCX_InViewport is a very lightweight (2.3kb!) vanilla javascript library that r
 4. Call start() method  
 
 # Code Sample
+![pysql](https://raw.githubusercontent.com/jamesonfajardo/PySQL_Assistant/master/pysql.png)  
 ```
 let h1 = document.querySelector('h1');
 
