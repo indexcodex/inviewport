@@ -49,7 +49,9 @@
         <h1>SECTION 3</h1>
     </div>
     <div>
+        <h1 style='margin-top: -300px;'>SECTION 4</h1>
         <h1>SECTION 4</h1>
+        <h1 style='margin-top: 300px;'>SECTION 4</h1>
     </div>
     <div>
         <h1>SECTION 5</h1>
@@ -58,18 +60,36 @@
     <script>
         let h1 = document.querySelectorAll('h1');
 
-        function inViewportCallback() {
+        function inViewportCallback1() {
             h1[3].style.color = 'red';
         }
+        function inViewportCallback2() {
+            h1[4].style.color = 'red';
+        }
+        function inViewportCallback3() {
+            h1[5].style.color = 'red';
+        }
 
-        let inViewport = new IXCX_InViewport({
+        let inViewport1 = new IXCX_InViewport({
             target: h1[3],
-            callback: inViewportCallback,
-            offsetTrigger: null,
+            callback: inViewportCallback1,
+            offsetTrigger: '50%',
             debugMode: 1,
         });
+        let inViewport2 = new IXCX_InViewport({
+            target: h1[4],
+            callback: inViewportCallback2,
+            offsetTrigger: '50%',
+        });
+        let inViewport3 = new IXCX_InViewport({
+            target: h1[5],
+            callback: inViewportCallback3,
+            offsetTrigger: '50%',
+        });
 
-        inViewport.start();
+        inViewport1.start();
+        inViewport2.start();
+        inViewport3.start();
     </script>
 </body>
 
