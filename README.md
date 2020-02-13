@@ -13,8 +13,8 @@ IXCX_InViewport is a very lightweight (2.3kb!) vanilla javascript library that r
 4. Call start() method  
 
 # Code Sample 
-![pysql](https://raw.githubusercontent.com/indexcodex/inviewport/master/demo/debugMode1.png)  
 **Trigger Callback at 50% height**
+![pysql](https://raw.githubusercontent.com/indexcodex/inviewport/master/demo/debugMode1.png)  
 ```
 let h1 = document.querySelector('h1');
 
@@ -26,6 +26,25 @@ let inViewport = new IXCX_InViewport({
   target: h1,
   callback: inViewportCallback,
   offsetTrigger: '50%',
+  debugMode: 1,
+});
+
+inViewport.start();
+```
+
+**Trigger Callback at 300px**
+![pysql](https://raw.githubusercontent.com/indexcodex/inviewport/master/demo/debugMode2.png)  
+```
+let h1 = document.querySelector('h1');
+
+function inViewportCallback() {
+  h1.style.color = 'red';
+}
+
+let inViewport = new IXCX_InViewport({
+  target: h1,
+  callback: inViewportCallback,
+  offsetTrigger: '300px',
   debugMode: 1,
 });
 
