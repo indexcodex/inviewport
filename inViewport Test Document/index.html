@@ -59,7 +59,11 @@
 
     <script>
         let h1 = document.querySelectorAll('h1');
+        let div = document.querySelectorAll('div');
 
+        function inViewportCallback() {
+            h1[2].style.color = 'red';
+        }
         function inViewportCallback1() {
             h1[3].style.color = 'red';
         }
@@ -70,6 +74,12 @@
             h1[5].style.color = 'red';
         }
 
+        let inViewport = new IXCX_InViewport({
+            target: div[2],
+            callback: inViewportCallback,
+            offsetTrigger: '20%',
+            debugMode: 1,
+        });
         let inViewport1 = new IXCX_InViewport({
             target: h1[3],
             callback: inViewportCallback1,
@@ -87,6 +97,7 @@
             offsetTrigger: '50%',
         });
 
+        inViewport.start();
         inViewport1.start();
         inViewport2.start();
         inViewport3.start();
