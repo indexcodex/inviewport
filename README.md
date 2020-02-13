@@ -12,8 +12,9 @@ IXCX_InViewport is a very lightweight (2.3kb!) vanilla javascript library that r
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) debugMode (optional; default: false; data type: boolean) :**  `shows a visual debugger to help determine the callback trigger point`  
 4. Call start() method  
 
-# Code Sample
-![pysql](https://raw.githubusercontent.com/jamesonfajardo/PySQL_Assistant/master/pysql.png)  
+# Code Sample 
+![pysql](https://raw.githubusercontent.com/indexcodex/inviewport/master/demo/debugMode1.png)  
+**Trigger Callback at 50% height**
 ```
 let h1 = document.querySelector('h1');
 
